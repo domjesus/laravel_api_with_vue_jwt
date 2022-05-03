@@ -21,6 +21,7 @@ run 'php artisan migrate' to create tables
 ## Scafold frontend
 
 npm install or yarn install
+<br>
 npm run watch or yarn watch
 
 ## Acessing aplication
