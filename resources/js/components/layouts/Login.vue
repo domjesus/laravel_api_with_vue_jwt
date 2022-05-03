@@ -74,7 +74,7 @@ export default {
   },
   methods: {
     ...mapActions({
-      signIn: "auth/login",
+      signIn: "login",
     }),
     async login() {
       this.processing = true;

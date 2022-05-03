@@ -34,7 +34,7 @@ __webpack_require__.r(__webpack_exports__);
   name: "dashboard",
   data: function data() {
     return {
-      user: this.$store.state.auth.user
+      user: this.$store.getters.getUser
     };
   }
 });
@@ -125,7 +125,7 @@ var render = function () {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "container" }, [
+  return _c("div", { staticClass: "container mt-5" }, [
     _c("div", { staticClass: "row" }, [
       _c("div", { staticClass: "col-12" }, [
         _c("div", { staticClass: "card shadow-sm" }, [
@@ -133,8 +133,10 @@ var render = function () {
           _vm._v(" "),
           _c("div", { staticClass: "card-body" }, [
             _c("p", { staticClass: "mb-0" }, [
-              _vm._v("\n            You are logged in as "),
-              _c("b", [_vm._v(_vm._s(_vm.user.email))]),
+              _vm._v("\n            Você está logado como: "),
+              _c("b", [
+                _vm._v(_vm._s(_vm.user.name) + " - " + _vm._s(_vm.user.email)),
+              ]),
             ]),
           ]),
         ]),

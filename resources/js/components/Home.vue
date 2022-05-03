@@ -1,9 +1,16 @@
 <template>
-  <h1>Home component</h1>
+  <dashboard v-if="authenticated" />
 </template>
 
 <script>
-export default {};
+import { mapGetters } from "vuex";
+import Dashboard from "./layouts/Dashboard.vue";
+export default {
+  computed: {
+    ...mapGetters({ authenticated: "getIsAuthenticated" }),
+  },
+  components: { Dashboard },
+};
 </script>
 
 <style>

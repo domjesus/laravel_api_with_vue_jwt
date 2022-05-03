@@ -134,7 +134,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
     };
   },
   methods: _objectSpread(_objectSpread({}, (0,vuex__WEBPACK_IMPORTED_MODULE_2__.mapActions)({
-    signIn: "auth/login"
+    signIn: "login"
   })), {}, {
     login: function login() {
       var _this = this;
