@@ -13,7 +13,9 @@ composer install
 ## Configure and create database
 
 Copy .env.example to .env (the DB variables are just set), feel free to change;
+<br>
 run sql command: create database laravel_jwt;
+<br>
 run 'php artisan migrate' to create tables
 
 ## Scafold frontend
